@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Chinese Takeaway";
+}
+body{
+    min-width: 1013px;
+}
+ul{
+    list-style: none;
+}
+.app{
+    width: 80%;
+    background: #00AAEE;
+    margin: 10px auto;
+}
+.top{
+    background: #2c3e50;
+    height: 70px;
+}
+.top div{
+    float: left;
+}
+.title{
+    font-size: 30px;
+    color: whitesmoke;
+    line-height: 70px;
+}
+.search-box{
+    height: 50px;
+    background: yellow;
+    padding: 13px;
+    margin: 8px;
+    border-radius: 50px;
+}
+.search-box .search-input{
+    background: none;
+    border: none;
+    color: black;
+    outline: none;
+    width: 0;
+    font-size: 20px;
+    transition: 2s;
+}
+.search-box .search-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+}
+.search-box:hover .search-input{
+    width: 250px;
+}
+.search-box:hover .search-btn{
+    color: #0be881;
+}
+.music{
+    height: 80vh;
+}
+.music div{
+    float: left;
+}
+.left{
+    width: 25%;
+    height: 100%;
+    background: #8e44ad;
+    overflow-y: scroll;
+    /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+    -ms-overflow-style: none;
+    /*火狐下隐藏滚动条*/
+    scrollbar-width: none;
+}
+.left::-webkit-scrollbar {
+    display: none;
+}
+.left li{
+    height: 32px;
+    line-height: 32px;
+    background: #0be881;
+    margin: 3px 0;
+}
+.center{
+    width: 55%;
+    height: 100%;
+    background: #27ae60;
+}
+.center img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30%;
+    margin-left: 33%;
+    animation-fill-mode: forwards;
+}
+.center .xz{
+    animation: xz 5s linear infinite;
+}
+@keyframes xz {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.center .mv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3C3C3C;
+}
+.center video{
+    width: 700px;
+    height: 500px;
+}
+.right{
+    width: 20%;
+    height: 100%;
+    background: #16a085;
+    overflow-y: scroll;
+    /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+    -ms-overflow-style: none;
+    /*火狐下隐藏滚动条*/
+    scrollbar-width: none;
+}
+.right::-webkit-scrollbar {
+    display: none;
+}
+.right dl{
+    width: 100%;
+}
+.right dl dt img{
+    width: 40px;
+    height: 40px;
+}
+.right p{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.playMusic{
+    width: 100%;
+    background: #00D672;
+    height: 40px;
+}
+.playMusic audio{
+    width: 100%;
+}
+
+

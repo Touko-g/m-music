@@ -1,0 +1,187 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+.top {
+  height: 10vh;
+  background: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top .title {
+  font-size: 1.067rem;
+  padding-left: 0.533rem;
+  font-style: italic;
+  color: darkred;
+}
+.top .search-box {
+  height: 1.333rem;
+  background: #26de81;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.333rem;
+}
+.top .search-box .ipt {
+  padding-left: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .search-box .ipt .search-input {
+  background: none;
+  border: none;
+  color: #2c2c54;
+  outline: none;
+  font-size: 0.533rem;
+}
+.top .search-box .btn {
+  padding-right: 0.4rem;
+}
+.top .search-box .btn .search-btn {
+  width: 1.333rem;
+  height: 1.333rem;
+  font-size: 0.533rem;
+  outline: none;
+  color: #4b6584;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music {
+  display: flex;
+  max-height: 80vh;
+}
+.music .left {
+  width: 30%;
+  background-color: #a5b1c2;
+  overflow-y: scroll;
+  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  -ms-overflow-style: none;
+  /*火狐下隐藏滚动条*/
+  scrollbar-width: none;
+}
+.music .left::-webkit-scrollbar {
+  display: none;
+}
+.music .left ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 0.533rem;
+  height: 1.333rem;
+  margin-bottom: 0.08rem;
+  background-color: #cccccc;
+}
+.music .left ul li img {
+  width: 0.853rem;
+  height: 0.853rem;
+}
+.music .center {
+  width: 40%;
+  background-color: #d1d8e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music .center img {
+  width: 5.333rem;
+  height: 5.333rem;
+  border-radius: 50%;
+}
+.music .center .xz {
+  animation: xz 5s linear infinite;
+}
+@keyframes xz {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.music .center .mv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3C3C3C;
+}
+.music .center .mv video {
+  width: 20rem;
+  height: 14.4rem;
+}
+.music .right {
+  width: 30%;
+  background-color: #d1d8e0;
+  overflow-y: scroll;
+  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  -ms-overflow-style: none;
+  /*火狐下隐藏滚动条*/
+  scrollbar-width: none;
+}
+.music .right::-webkit-scrollbar {
+  display: block;
+}
+.music .right p {
+  font-size: 0.533rem;
+  font-weight: bold;
+}
+.music .right dl {
+  width: 100%;
+}
+.music .right dl .pic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.347rem;
+  font-style: italic;
+  font-weight: bold;
+}
+.music .right dl .pic img {
+  width: 1.067rem;
+  height: 1.067rem;
+}
+.music .right dl .comment {
+  font-size: 0.321rem;
+  line-height: 0.533rem;
+  letter-spacing: 0.053rem;
+}
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-decoration: line-through;
+}
+footer audio {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
