@@ -57,6 +57,7 @@ new Vue({
         play() {
             // this.isPlaying=true;
             this.imgMes=document.querySelector('.xz');
+            console.log('开启定时器');
             this.timer=setInterval(()=>{
                 this.imgMes.style.transform='rotate(' + (this.rotate += 100) + 'deg)';
                 this.imgMes.style.transition = 'all 1s linear';
@@ -65,7 +66,8 @@ new Vue({
             console.log(this.timer)
         },
         pause(){
-            clearInterval(this.timer)
+            clearInterval(this.timer);
+            console.log('关闭定时器');
             // let imgMes=document.querySelector('img');
             // let computedStyle = document.defaultView.getComputedStyle(imgMes, null);
             // this.rotate=computedStyle.transform;
