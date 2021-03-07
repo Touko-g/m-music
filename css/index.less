@@ -20,26 +20,24 @@ ul{
 }
 .top{
   height: 10vh;
-  background: #ecf0f1;
+  //background: #ecf0f1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background:linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  animation: light 5s linear infinite;
+  @keyframes light{
+    100%{
+      background-position: -400% 0;
+    }
+  }
   .title{
     font-size: 1.067rem;
     margin-left: 0.533rem;
     padding-right: 0.3rem;
     font-style: italic;
     color: darkred;
-    background:linear-gradient(to right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
-    background-size: 400%;
-    &:hover{
-      animation: light 5s linear infinite;
-    }
-    @keyframes light{
-      100%{
-        background-position: -400% 0;
-      }
-    }
   }
   .search-box{
     height: 1.333rem;

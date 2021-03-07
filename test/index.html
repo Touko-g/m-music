@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .app{
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            padding-left: 10px;
+            margin-top: 60px;
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Algerian;
+        }
+        .base1 {
+            width: 80px;
+            height: 40px;
+            background: rgb(26,91,111);
+            color: black;
+        }
+
+        .base2{
+            width: 80px;
+            height: 40px;
+            background: black;
+            color: whitesmoke;
+        }
+        .mask{
+            height: 40px;
+            position: absolute;
+            overflow: hidden;
+            top:0;
+            width: 0;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="app">
+    <div class="base1">MONEY</div>
+    <div class="mask">
+        <div class="base2">MONEY</div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".app").mouseenter(function () {
+            $(this).children(".mask").stop().animate({width:150},500)
+        }).mouseleave(function () {
+            $(this).children(".mask").stop().animate({width:0},500)
+        })
+    })
+</script>
+</body>
+</html>
